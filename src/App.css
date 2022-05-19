@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+@font-face{        
+font-family: "Caveat";
+src: url(Typo/Caveat.ttf);
+    }
+
+@font-face{        
+font-family: "Fuzzy";
+src: url(Typo/FuzzyBubbles.ttf);
+    }
+
+@font-face{        
+    font-family: "Action";
+    src: url(Typo/Action.ttf);
+        }    
+
+@font-face{        
+    font-family: "Abys";
+    src: url(Typo/Abyss.otf);
+        }
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "about about about"
+    "courses courses courses"
+    "galery galery galery"
+    "references references references"
+    "contact contact contact";
+}
+
+/* NAVBAR */
+.Navbar {
+    display: grid;
+    grid-area: navbar;
+    grid-template-areas: "logo . nav";
+    font-family: "Caveat";
+    font-size: x-large;
+    grid-template-columns: 1fr 50vw 1fr;
+    align-items: center;
+    border-bottom: solid 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.Navbar .Belen-title{
+    grid-area: logo;    
+    justify-self: center;
+}
+
+.Navbar .Belen-title img{
+    max-width: 3em;
+}
+
+.Navbar ul{    
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.Navbar-ul{
+    grid-area: nav;
+    grid-column: 2/3;
+}
+
+.Navbar ul li{
+    list-style-type: none;    
+}
+
+a {
+    text-decoration: none;    
+    display: inline-block;
+    position: relative;
+    color: inherit;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #f184ff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* ABOUT */
+.About-container {
+    display: grid;
+    grid-area: about;
+    grid-template-areas:
+     "img txt";
+    background-color: #FEF6FF;
+}
+
+
+.Img-about-container{
+    display: grid;
+    grid-area: img;
+}
+
+.Img-about-container .Img-about img{
+    width: 100%;
+    max-width: 50vw;
+    height: 100%;
+}
+
+.Text-about-container{
+    grid-area: txt;
+    width: 100%;
+    max-width: 50vw;
+    align-self: center;
+    margin: auto;
+}
+
+.Text-about-container h1{
+    font-family: 'Caveat';
+    font-size: xx-large;
+    text-align: center;
+}
+
+.Text-about-description {
+    font-family: "Fuzzy";
+    padding: 2em;
+}
+
+.Text-about-description h3{
+    font-family: 'Action';
+}
+
+/* COURSES */
+.Courses-container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-area: courses;
+    grid-template-areas: 
+    "txt video";
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+    background-color: #FEF6FF;
+}
+
+.Courses-container .Courses-text{
+    width: 100%;
+    font-family: 'Fuzzy';
+    padding: 2em;
+    text-align: center;
+    align-self: center;
+    max-width: 600px;
+    margin: auto;
+    grid-area: txt;
+}
+
+.Courses-text div{
+    padding: 2em;    
+    font-family: 'Caveat';
+}
+.Courses-text h2{
+    font-size: xx-large;
+}
+
+.Courses-text h3{
+    font-size: x-large;
+    text-align: right;
+}
+
+.Courses-text h4{
+    text-align: left;
+}
+
+.Courses-container .Courses-video video{
+    width: 100%;
+    max-width: 50vw;
+    grid-area: video;
+}
+
+
+
+/* GALERY */
+.Galery-container{
+    grid-area: galery;
+}
+
+
+/* REFERENCES */
+.References-container{
+    grid-area: references;
+    display: flex;
+    background-color: #FEF6FF;
+    padding: 2em;
+    justify-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.References-container .Card-reference img{
+    max-width: 100%;
+    border: solid 4px white;
+}
+
+/* CONTACT */
+.Contact-container{
+    grid-area: contact;
+    background: black;
+    padding: 40px 0;
+}
+
+.Contact-container h1,h2 {    
+    color: #f184ff;
+    text-align: center;    
+    font-family: 'Caveat';
+}
+
+.Contact-container h1{
+    max-width: 600px;
+    text-align: center;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.Contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.Contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.Contact-form-text:focus{
+    box-shadow: 0 0 5px 1px #f184ff;
+}
+
+textarea.Contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.Contact-form-btn{
+    float: right;
+    border: 0;
+    background: #f184ff;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Contact-form-btn:hover{
+    background: #a85eb1;
+}
+
+.Border {
+    width: 100px;
+    height: 5px;
+    background: #f184ff;
+    margin: 40px auto;
+}
+
+
+@media (max-width: 1023px) {
+    .About-container {
+        grid-template-areas:
+         "img"
+         "txt";
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .Img-about-container .Img-about img{
+        max-width: 100%;
+    }
+    
+    .Text-about-container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+        padding-top: 2em;
+    }
+
+    .Text-about-description {
+        padding: 2em;
+    }
+
+    .Courses-container{
+        grid-template-areas: 
+        "video"
+        "txt"; 
+    }
+
+    .Courses-container .Courses-text{
+        padding: 2em;
+        text-align: center;
+        padding-top: 2em;        
+    }
+
+    .Courses-container .Courses-text h4{
+        text-align: center;       
+        padding: 0 0 3em 0;
+    }
+
+    .Courses-container .Courses-text div{      
+        padding: 0 0 2em 0;
+    }
+
+
+    .Courses-container .Courses-video video{
+        max-width: 100%;
+    }
+    
+    .References-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px){
+.References-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+}
