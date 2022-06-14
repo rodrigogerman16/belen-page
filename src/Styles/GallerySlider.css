@@ -1,0 +1,27 @@
+.Gallery-slider-container{
+    overflow-x: hidden;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+}
+
+.Gallery-slider{
+    display: flex;
+    cursor: grab;
+    gap: 10px;
+}
+
+.Gallery-Item img{
+    height: 350px;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 768px){
+    .Gallery-slider-container{
+        visibility: visible;
+        position: initial;
+        width: 100%;
+    }
+}
