@@ -24,22 +24,14 @@ src: url(Typo/FuzzyBubbles.ttf);
     src: url(Typo/Abyss.otf);
         }
 
+
 .App {
-    display: grid;
-    grid-template-columns: 1fr 50vw 1fr;
-    grid-template-areas: 
-    "navbar navbar navbar"
-    "about about about"
-    "courses courses courses"
-    "galery galery galery"
-    "references references references"
-    "contact contact contact";
+    background-color: #FEF6FF;;
 }
 
 /* NAVBAR */
 .Navbar {
     display: grid;
-    grid-area: navbar;
     grid-template-areas: "logo . nav";
     font-family: "Caveat";
     font-size: x-large;
@@ -73,7 +65,7 @@ src: url(Typo/FuzzyBubbles.ttf);
 }
 
 .Navbar ul li{
-    list-style-type: none;    
+    list-style-type: none;  
 }
 
 a {
@@ -98,14 +90,12 @@ a {
     width: 100%; 
     left: 0; 
   }
-
+  
 /* ABOUT */
 .About-container {
     display: grid;
-    grid-area: about;
     grid-template-areas:
      "img txt";
-    background-color: #FEF6FF;
 }
 
 
@@ -148,11 +138,9 @@ a {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-area: courses;
     grid-template-areas: 
     "txt video";
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
-    background-color: #FEF6FF;
 }
 
 .Courses-container .Courses-text{
@@ -192,31 +180,111 @@ a {
 
 
 /* GALERY */
-.Galery-container{
-    grid-area: galery;
+
+.Gallery-title{
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: xx-large;
+    padding: 3em 0 1em 0;
 }
 
+.Social-links-container{
+    padding: 3em 0;
+    border: 2px solid #f3b8b8;
+    margin: 1em 30em;
+}
+
+.Social-links-title{
+    font-family: 'Caveat';
+    font-size: 30px;
+    color: black;    
+}
+
+.Social-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.Social-links a{
+    color: dark;
+    font-size: 40px;
+}
+
+.Gallery-laptop-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+    padding: 0 5em;
+    visibility: visible;
+    position: initial;
+    justify-content: center;
+}
+
+.Img-laptop-gallery img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.Img-laptop-gallery img:hover{
+    opacity: 40%;
+}
 
 /* REFERENCES */
-.References-container{
-    grid-area: references;
-    display: flex;
-    background-color: #FEF6FF;
-    padding: 2em;
-    justify-items: center;
-    justify-content: center;
-    gap: 1em;
-
+.References-title{
+    text-align-last: center;
+    padding: 3em 0 0 0;
+    font-family: 'caveat';
+    font-size: xx-large;
 }
 
-.References-container .Card-reference img{
-    max-width: 100%;
-    border: solid 4px white;
+.Slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    padding: 3em 0;
+}
+
+.Image{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.Right-arrow{
+    position: absolute;
+    right: 5px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.Left-arrow{
+    position: absolute;
+    left: 5px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Slide {
+    opacity: 0;
+    transition-duration: 1s easy;
+}
+
+.Slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
 }
 
 /* CONTACT */
 .Contact-container{
-    grid-area: contact;
     background: black;
     padding: 40px 0;
 }
@@ -343,8 +411,17 @@ textarea.Contact-form-text{
 }
 
 @media (max-width: 768px){
-.References-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    .References-side-img{
+        visibility: hidden;
+    }
+    
+    .Gallery-laptop-container{
+        visibility: hidden;
+        position: absolute;
+        width: 0;
+    }
+
+
+
 }
-}
+

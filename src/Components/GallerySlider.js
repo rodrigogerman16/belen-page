@@ -2,8 +2,6 @@ import images from './images'
 import React from 'react'  
 import '../Styles/GallerySlider.css'
 import { motion } from 'framer-motion'
-import { faMaxcdn } from '@fortawesome/free-brands-svg-icons'
-import { isContentEditable } from '@testing-library/user-event/dist/utils'
 
 const GallerySlider = () => {
   return (
