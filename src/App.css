@@ -93,6 +93,7 @@ a {
   
 /* ABOUT */
 .About-container {
+    overflow: hidden;
     display: grid;
     grid-template-areas:
      "img txt";
@@ -140,7 +141,8 @@ a {
     display: grid;
     grid-template-areas: 
     "txt video";
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    overflow: hidden; 
 }
 
 .Courses-container .Courses-text{
@@ -285,8 +287,9 @@ a {
 
 /* CONTACT */
 .Contact-container{
+    overflow: hidden;
     background: black;
-    padding: 40px 0;
+    padding: 55px 0;
 }
 
 .Contact-container h1,h2 {    
