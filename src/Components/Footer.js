@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer class="relative bottom-0 left-0 right-0 p-4 w-3/4 m-auto md:flex md:items-center md:justify-between md:p-6">
+    <footer class="relative bottom-0 left-0 right-0 p-4 w-full text-center md:w-4/6 m-auto md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
         © 2023{" "}
         <a href="https://flowbite.com/" class="hover:underline">
@@ -8,7 +8,7 @@ export default function Footer() {
         </a>
         . All Rights Reserved.
       </span>
-      <ul class="flex flex-wrap gap-4 items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <ul class="flex flex-wrap gap-4 justify-center items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
           <a
             type="button"
