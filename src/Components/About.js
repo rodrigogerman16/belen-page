@@ -27,12 +27,12 @@ const About = () => {
               </p>
             </div>
             <div className="flex gap-4 self-start pt-10 mb-10 lg:mb-0">
-              <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded w-max ">
+              <a href="courses" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded w-max ">
                 Courses
-              </button>
-              <button class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-max ">
+              </a>
+              <a href="contact" class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-max ">
                 Contact
-              </button>
+              </a>
             </div>
           </div>
 
