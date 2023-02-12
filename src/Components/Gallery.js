@@ -1,4 +1,3 @@
-import images from "./images";
 import React from "react";
 
 const Gallery = () => {
@@ -17,35 +16,35 @@ const Gallery = () => {
             <img
               src="/gallery1.png"
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Photo 1"
+              alt="Slide 1"
             />
           </div>
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/gallery2.png"
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Photo 2"
+              alt="Slide 2"
             />
           </div>
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/gallery3.png"
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Photo 3"
+              alt="Slide 3"
             />
           </div>
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/gallery4.png"
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Photo 4"
+              alt="Slide 4"
             />
           </div>
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="/gallery5.png"
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Photo 5"
+              alt="Slide 5"
             />
           </div>
         </div>
@@ -141,6 +140,9 @@ const Gallery = () => {
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
           className="inline-block cursor-pointer px-6 py-2.5 mb-2 text-white bg-blue-600 hover:bg-blue-500 font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+          href="https://www.facebook.com/belut94"
+          target="_blank"
+          rel="noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -159,6 +161,9 @@ const Gallery = () => {
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
           className="inline-block cursor-pointer px-6 py-2.5 mb-2 bg-red-600 hover:bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+          href="https://www.instagram.com/belen_tejedor/?hl=es"
+          target="_blank"
+          rel="noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
