@@ -29,9 +29,6 @@ src: url(Typo/FuzzyBubbles.ttf);
         }
 
 
-.App {
-    background-color: #FEF6FF;;
-}
   
 /* ABOUT */
 .About-container {
@@ -359,14 +356,5 @@ textarea.Contact-form-text{
     .References-side-img{
         visibility: hidden;
     }
-    
-    .Gallery-laptop-container{
-        visibility: hidden;
-        position: absolute;
-        width: 0;
-    }
-
-
-
 }
 
