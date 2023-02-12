@@ -1,13 +1,12 @@
 import './App.css';
 
 import Form from './Components/Form'
-import ImageSlider from './Components/ImageSlider'
-import { SliderData } from './Components/SliderData'
 import Nav from './Components/Nav';
 import About from './Components/About';
 import Courses from './Components/Courses';
 import GalleryDesktop from './Components/GalleryDesktop'
 import { Route } from 'react-router-dom';
+import References from './Components/References';
 
 function App() {
   return (
@@ -25,7 +24,7 @@ function App() {
       </Route>
       
       <Route exact path="/references">
-        <ImageSlider slides={SliderData}/>
+        <References/>
       </Route>
       
       <Route exact path="/contact">
