@@ -7,6 +7,7 @@ import Courses from "./Components/Courses";
 import Gallery from "./Components/Gallery";
 import { Route } from "react-router-dom";
 import References from "./Components/References";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
 
       <Route exact path="/contact">
         <Form />
+      </Route>
+      <Route path="/">
+        <Footer/>
       </Route>
     </div>
   );
