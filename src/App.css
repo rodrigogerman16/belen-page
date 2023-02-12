@@ -80,59 +80,6 @@ src: url(Typo/FuzzyBubbles.ttf);
     opacity: 40%;
 }
 
-/* REFERENCES */
-.References-title{
-    text-align-last: center;
-    padding: 3em 0 0 0;
-    font-family: 'caveat';
-    font-size: xx-large;
-}
-
-.Slider{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
-    padding: 3em 0;
-}
-
-.Image{
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-}
-
-.Right-arrow{
-    position: absolute;
-    right: 5px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-.Left-arrow{
-    position: absolute;
-    left: 5px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-
-.Slide {
-    opacity: 0;
-    transition-duration: 1s easy;
-}
-
-.Slide.active{
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-}
-
 /* CONTACT */
 .Contact-container{
     overflow: hidden;
@@ -202,20 +149,5 @@ textarea.Contact-form-text{
     height: 5px;
     background: #f184ff;
     margin: 40px auto;
-}
-
-
-@media (max-width: 1023px) {
-    
-    .References-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
-
-@media (max-width: 768px){
-    .References-side-img{
-        visibility: hidden;
-    }
 }
 
