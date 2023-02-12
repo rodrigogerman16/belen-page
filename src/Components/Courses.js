@@ -15,13 +15,14 @@ const Courses = () => {
             />
           </div>
           <div className="flex flex-col text-center justify-between h-full w-full xl:w-5/6 md:justify-self-end md:text-right">
-              <span className="text-pink-500 text-lg md:text-xl font-bold">
-                “You are never too old to set another goal or to dream a new
-                dream.”
-              </span>
-              
+            <span className="text-pink-500 text-lg md:text-xl font-bold">
+              “You are never too old to set another goal or to dream a new
+              dream.”
+            </span>
+
             <h1 className="text-xl font-semibold tracking-tight">
-              - Malala Yousafzai</h1>
+              - Malala Yousafzai
+            </h1>
             <div className="pt-5">
               <h3 className="font-semibold text-lg">What you will learn?</h3>
               <p className="text-justify text-sm">

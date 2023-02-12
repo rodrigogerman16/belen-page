@@ -36,7 +36,10 @@ const Nav = () => {
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-            <Link to="/" className="hover:underline hover:underline-offset-4 text-pink-600">
+            <Link
+              to="/"
+              className="hover:underline hover:underline-offset-4 text-pink-600"
+            >
               <li
                 className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold"
                 aria-current="About Me"
@@ -44,23 +47,34 @@ const Nav = () => {
                 About Me
               </li>
             </Link>
-            <Link to="courses" className="hover:underline hover:underline-offset-4 text-pink-600">
-              <li 
-              className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
+            <Link
+              to="courses"
+              className="hover:underline hover:underline-offset-4 text-pink-600"
+            >
+              <li className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
                 Courses
               </li>
             </Link>
-            <Link to="gallery" className="hover:underline hover:underline-offset-4 text-pink-600">
+            <Link
+              to="gallery"
+              className="hover:underline hover:underline-offset-4 text-pink-600"
+            >
               <li className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
                 Gallery
               </li>
             </Link>
-            <Link to="references" className="hover:underline hover:underline-offset-4 text-pink-600">
-            <li className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
+            <Link
+              to="references"
+              className="hover:underline hover:underline-offset-4 text-pink-600"
+            >
+              <li className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
                 References
               </li>
             </Link>
-            <Link to="contact" className="hover:underline hover:underline-offset-4 text-pink-600">
+            <Link
+              to="contact"
+              className="hover:underline hover:underline-offset-4 text-pink-600"
+            >
               <li className="block py-2 pl-3 pr-4 text-gray-800 rounded md:p-0 font-semibold">
                 Contact
               </li>
