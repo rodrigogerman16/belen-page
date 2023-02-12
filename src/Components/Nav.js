@@ -11,9 +11,6 @@ const Nav = () => {
             alt="Belen Logo"
             className="h-16 mr-3 sm:h-20"
           />
-          <span className="self-center text-xl font-semibold whitespace-nowrap">
-            Belen Tejedor
-          </span>
         </Link>
         <button
           data-collapse-toggle="navbar-default"
