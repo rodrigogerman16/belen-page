@@ -3,7 +3,6 @@ import './App.css';
 import Form from './Components/Form'
 import ImageSlider from './Components/ImageSlider'
 import { SliderData } from './Components/SliderData'
-import GallerySlider from './Components/GallerySlider'
 import Nav from './Components/Nav';
 import About from './Components/About';
 import Courses from './Components/Courses';
@@ -12,7 +11,7 @@ import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Route path="/">
         <Nav/>
       </Route>
@@ -22,8 +21,7 @@ function App() {
       <Route exact path="/courses" component={Courses} />
         
       <Route exact path="/gallery">
-        <GalleryDesktop />      
-        <GallerySlider />
+        <GalleryDesktop />     
       </Route>
       
       <Route exact path="/references">
