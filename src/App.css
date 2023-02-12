@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -28,68 +32,6 @@ src: url(Typo/FuzzyBubbles.ttf);
 .App {
     background-color: #FEF6FF;;
 }
-
-/* NAVBAR */
-.Navbar {
-    display: grid;
-    grid-template-areas: "logo . nav";
-    font-family: "Caveat";
-    font-size: x-large;
-    grid-template-columns: 1fr 50vw 1fr;
-    align-items: center;
-    border-bottom: solid 0.5px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
-}
-
-.Navbar .Belen-title{
-    grid-area: logo;    
-    justify-self: center;
-}
-
-.Navbar .Belen-title img{
-    max-width: 3em;
-}
-
-.Navbar ul{    
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.Navbar-ul{
-    grid-area: nav;
-    grid-column: 2/3;
-}
-
-.Navbar ul li{
-    list-style-type: none;  
-}
-
-a {
-    text-decoration: none;    
-    display: inline-block;
-    position: relative;
-    color: inherit;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #f184ff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
   
 /* ABOUT */
 .About-container {
