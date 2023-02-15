@@ -26,14 +26,29 @@ const Courses = () => {
             <div className="pt-5">
               <h3 className="font-semibold text-lg">What you will learn?</h3>
               <p className="text-justify text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                The courses may focus on mastering the basic steps, improving
+                posture and alignment, and learning to move with rhythm and
+                musicality. As students progress, they may also work on more
+                advanced skills such as turns, jumps, and partner work.
+              </p>
+
+              <p className="text-justify text-sm">
+                In addition to physical skills, dance courses may also focus on
+                cultivating creativity, expression, and performance skills.
+                Students may learn how to tell a story through dance, interpret
+                music, and connect with their audience. Dance courses offer a
+                fun and engaging way to improve physical fitness, build
+                confidence, and express oneself through movement.
+              </p>
+
+              <p className="text-justify text-sm">
+                Overall, dance courses can vary depending on the level, style,
+                and goals of the students. But they all share a common objective
+                of helping students improve their dance skills and develop their
+                unique style of movement. Whether you are a beginner or an
+                experienced dancer, taking a dance course is a great way to
+                learn new techniques, challenge yourself, and explore the world
+                of dance.
               </p>
             </div>
             <div className="flex gap-4 self-center md:self-end pt-10 mb-10 lg:mb-0">
