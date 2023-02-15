@@ -13,18 +13,17 @@ const About = () => {
                 Dancer - Coreographer - Model
               </span>
             </h1>
-            <div className="pt-5">
+            <div>
               <h3 className="font-semibold text-lg">A little about me</h3>
               <p className="text-justify text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              Hi there, I'm a professional dancer, born in Argentina and currently living in Madrid - Spain. As a two-time Bachata world champion, I have dedicated my life to perfecting my craft and pushing the boundaries of what's possible on the dance floor.
               </p>
+              <p className="text-justify text-sm">
+              Now I travel every weekend to events all around the world, where I perform and teach. Furthermore, prominent dance brands have elected to select me as their brand ambassador, bestowing upon me the honor of showcasing their products and serving as the embodiment of their advertising campaigns.
+              </p>
+              <p className="text-justify text-sm">
+              Dancing has always been my greatest passion, and nothing brings me more joy than expressing myself through movement and music.
+              </p>              
             </div>
             <div className="flex gap-4 self-start pt-10 mb-10 lg:mb-0">
               <a
