@@ -17,8 +17,8 @@ const References = () => {
           <div className="mb-0">
             <div className="flex justify-center mb-6">
               <img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-                className="rounded-full shadow-lg w-32"
+                src="/klaudia.jpg"
+                className="rounded-full shadow-lg w-32 h-32 object-cover"
               />
             </div>
             <h5 className="text-xl font-semibold mb-4">Klaudia</h5>
@@ -50,8 +50,8 @@ const References = () => {
           <div className="mb-12 md:mb-0">
             <div className="flex justify-center mb-6">
               <img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                className="rounded-full shadow-lg w-32"
+                src="/anastasya.jpg"
+                className="rounded-full shadow-lg w-32 h-32 object-cover"
               />
             </div>
             <h5 className="text-xl font-semibold mb-4">Anastasiya</h5>
@@ -80,8 +80,8 @@ const References = () => {
           <div className="mb-12 md:mb-0">
             <div className="flex justify-center mb-6">
               <img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
-                className="rounded-full shadow-lg w-32"
+                src="/jenny.jpg"
+                className="rounded-full shadow-lg w-32 h-32 object-cover"
               />
             </div>
             <h5 className="text-xl font-semibold mb-4">Jenny</h5>
@@ -111,8 +111,8 @@ const References = () => {
           <div className="mb-0">
             <div className="flex justify-center mb-6">
               <img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-                className="rounded-full shadow-lg w-32"
+                src="/ewa.jpg"
+                className="rounded-full shadow-lg w-32 h-32 object-cover"
               />
             </div>
             <h5 className="text-xl font-semibold mb-4">Ewa</h5>
